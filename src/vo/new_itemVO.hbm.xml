@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.new_itemVO" table="items">
+
+		<id name="id" type="int" column="item_code">
+			<generator class="increment" />
+		</id>
+
+		<property name="iname">
+			<column name="item_name" />
+		</property>
+
+		<property name="icost">
+			<column name="item_cost" />
+		</property>
+
+<property name="imrp">
+			<column name="item_mrp" />
+		</property>
+		
+		<property name="icategory">
+			<column name="item_category" />
+		</property>
+		
+		<property name="idesc">
+			<column name="item_desc" />
+		</property>
+		
+		<property name="iwebsite">
+			<column name="item_website" />
+		</property>
+		
+		<property name="isupplier">
+			<column name="item_supplier" />
+		</property>
+		<property name="inote">
+			<column name="item_note" />
+		</property>
+		
+				
+</class>
+		
+
+</hibernate-mapping>

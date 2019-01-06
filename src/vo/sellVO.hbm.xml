@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.sellVO" table="sell">
+
+		<id name="id" type="int" column="Sell_Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="iname">
+			<column name="Item" />
+		</property>
+
+		<property name="quantity">
+			<column name="Quantity" />
+		</property>
+
+		<property name="customer">
+			<column name="Customer" />
+		</property>
+		
+		<property name="sdate" type="date">
+			<column name="Sell_Date" />
+		</property>
+		
+		<property name="note">
+			<column name="Sell_Note" />
+		</property>
+		
+		<property name="total_price">
+			<column name="Total_price" />
+		</property>
+		
+		<property name="profit">
+			<column name="Profit" />
+		</property>
+		
+				
+</class>
+		
+
+</hibernate-mapping>

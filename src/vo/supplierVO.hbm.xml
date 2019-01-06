@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.supplierVO" table="supplier">
+
+		<id name="ids" type="int" column="supplierId">
+			<generator class="increment" />
+		</id>
+
+		<property name="supplier">
+			<column name="supplier" />
+		</property>
+		<property name="userid">
+			<column name="userid" />
+		</property>
+
+		<property name="contact">
+			<column name="contact_Person" />
+		</property>
+
+		<property name="address">
+			<column name="address" />
+		</property>
+		
+		<property name="phone">
+			<column name="phone_Primary" />
+		</property>
+		
+		<property name="phonealt">
+			<column name="phone_Alternate" />
+		</property>
+		
+		<property name="fax">
+			<column name="fax" />
+		</property>
+		
+		<property name="email">
+			<column name="email" />
+		</property>
+				
+</class>
+		
+
+</hibernate-mapping>

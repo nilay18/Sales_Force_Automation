@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.orderVO" table="orders">
+
+		<id name="id" type="int" column="order_id">
+			<generator class="increment" />
+		</id>
+		<property name="rights">
+			<column name="rights" />
+		</property>
+
+		<property name="supplier">
+			<column name="order_supplier" />
+		</property>
+		
+		<property name="userid">
+			<column name="userid" />
+		</property>
+		
+		<property name="expected" type="date">
+			<column name="Order_expected"/>
+		</property>
+		
+		<property name="issue" type="date">
+			<column name="Order_issue"/>
+		</property>
+		
+		<property name="shipping">
+			<column name="shipping_carrier" />
+		</property>
+		
+		<property name="iname">
+			<column name="item_name" />
+		</property>
+		
+		<property name="quantity">
+			<column name="quantity" />
+		</property>
+		
+		<property name="note">
+			<column name="order_note" />
+		</property>
+		
+		
+		<property name="total_cost">
+			<column name="total_cost" />
+		</property>
+				
+</class>
+		
+
+</hibernate-mapping>
