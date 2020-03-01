@@ -1,4 +1,4 @@
-# Sales Force Management
+# Sales Force Automation
 Sales Force Management Systems or Sales Force Automation Systems (SFA) is used to manage and automate sales process. Sales Force
 Management Systems are important part of Customer Relationship Management (CRM).
 
