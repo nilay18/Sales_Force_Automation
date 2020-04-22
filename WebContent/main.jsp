@@ -26,8 +26,6 @@
 				</a>
 				<%@include file="sidebar.jsp" %>
 
-				
-
 
 				<div class="main-content">
 					<%@include file="navigation.jsp" %>
